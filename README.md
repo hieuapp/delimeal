@@ -26,4 +26,7 @@ Sceenshot
 
 <img src="https://github.com/hieuapp/delimeal/blob/master/screenshot/screen7.png" width="250"/> <img src="https://github.com/hieuapp/delimeal/blob/master/screenshot/screen8.png" width="250"/>
 
+### Contact for business proposal
+@hieuapp: https://www.facebook.com/hieuapp
+
 [1]: https://play.google.com/store/apps/details?id=com.hieuapp.lunch&hl=en
