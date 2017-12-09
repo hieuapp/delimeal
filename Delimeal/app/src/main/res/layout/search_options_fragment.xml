@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/search_setting"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:scrollbars="vertical"
+        android:paddingTop="@dimen/spacing_normal"
+        android:paddingBottom="@dimen/spacing_normal"
+        android:clipToPadding="false"
+        android:divider="@null"/>
+
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/padding_normal"
+        android:layout_marginEnd="@dimen/padding_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textAppearance="@style/PrimaryTitle"
+            android:text="@string/price_range"
+            android:layout_alignParentStart="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_alignParentEnd="true"
+            android:id="@+id/sp_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/padding_normal"
+        android:layout_marginEnd="@dimen/padding_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textAppearance="@style/PrimaryTitle"
+            android:text="@string/min_rating"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_alignParentEnd="true"
+            android:id="@+id/sp_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/padding_normal"
+        android:layout_marginEnd="@dimen/padding_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textAppearance="@style/PrimaryTitle"
+            android:text="@string/max_distance"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_alignParentEnd="true"
+            android:id="@+id/sp_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

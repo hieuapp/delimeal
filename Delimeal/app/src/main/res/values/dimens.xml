@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="compact_list_tile">200dp</dimen>
+
+    <dimen name="horizontal_scrollbar_height">4dp</dimen>
+
+    <!--Dish Detail-->
+    <dimen name="dish_thumb_width">112dp</dimen>
+    <dimen name="dish_thumb_height">72dp</dimen>
+    <item name="aspect_16_9" format="float" type="dimen">1.7778</item>
+
+    <!-- standard metrics -->
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_micro">4dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_end">24dp</dimen>
+
+    <!-- App Primary Text Sizes -->
+    <dimen name="app_text_size_xsmall">11sp</dimen>
+    <dimen name="app_text_size_small">12sp</dimen>
+    <dimen name="app_text_size_medium">14sp</dimen>
+    <dimen name="app_text_size_large">18sp</dimen>
+    <dimen name="app_text_size_xlarge">20sp</dimen>
+    <dimen name="app_text_size_diff_large_small">6sp</dimen>
+
+    <!-- line spacing -->
+    <item name="body_1_spacing" format="float" type="dimen">1.22448979592</item>
+    <item name="h3_spacing" format="float" type="dimen">1.14285714286</item>
+
+    <!-- Start Deprecated -->
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_body">13sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_diff_large_small">6sp</dimen>
+
+    <dimen name="text_size_primary">16sp</dimen>
+    <dimen name="text_size_secondary">14sp</dimen>
+    <dimen name="explore_grid_padding">4dp</dimen>
+
+    <dimen name="image_thumbnail_width">232dp</dimen>
+
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+    <dimen name="keyline_2_session_detail">@dimen/keyline_2</dimen>
+</resources>

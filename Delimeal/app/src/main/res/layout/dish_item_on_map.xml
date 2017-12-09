@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hieuapp.lunch.ui.widget.ForegroundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:paddingStart="@dimen/spacing_normal"
+    android:paddingEnd="@dimen/spacing_normal"
+    android:paddingTop="@dimen/padding_normal"
+    android:paddingBottom="@dimen/spacing_normal"
+    android:background="@android:color/transparent"
+    android:foreground="?android:selectableItemBackground">
+
+    <com.hieuapp.lunch.ui.widget.AspectRatioView
+        android:layout_width="176dp"
+        android:layout_height="0dp"
+        app:aspectRatio="@dimen/aspect_16_9">
+
+        <!-- Video thumbnail/preview -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@color/grey_300"
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:tint="@color/light_content_scrim"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/line_active"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </com.hieuapp.lunch.ui.widget.AspectRatioView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/food_name"
+            android:textAppearance="@style/PrimaryTitle"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RatingBar
+                android:id="@+id/stars"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:theme="@style/RatingBar"
+                android:stepSize="0.1"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:id="@+id/rate_point"
+                android:layout_marginStart="8dp"
+                android:textSize="@dimen/app_text_size_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/price"
+            android:textSize="@dimen/app_text_size_small"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</com.hieuapp.lunch.ui.widget.ForegroundLinearLayout>

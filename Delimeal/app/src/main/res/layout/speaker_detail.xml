@@ -1,0 +1,80 @@
+<!--
+  Copyright 2014 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iosched="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <com.hieuapp.lunch.ui.widget.BezelImageView
+        android:id="@+id/speaker_image"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:clickable="true"
+        android:focusable="true"
+        iosched:maskDrawable="@drawable/circle_mask"
+        iosched:borderDrawable="@drawable/circle_border"
+        android:src="@drawable/person_image_empty" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/keyline_2_session_detail"
+        android:layout_marginStart="@dimen/keyline_2_session_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:focusable="true"
+        style="@style/SessionDetailsSpeakerName" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginEnd="16dp"
+        android:layout_alignLeft="@id/username"
+        android:layout_alignStart="@id/username"
+        android:layout_alignRight="@id/username"
+        android:layout_alignEnd="@id/username"
+        style="@style/SecondaryText" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/comment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle"
+        android:layout_marginEnd="16dp"
+        android:layout_alignLeft="@id/username"
+        android:layout_alignStart="@id/username"
+        android:layout_alignRight="@id/username"
+        android:layout_alignEnd="@id/username"
+        android:autoLink="web"
+        style="@style/Body1Text" />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Delimeal</string>
+    <string name="explore">Explore</string>
+    <string name="saved">Saved</string>
+    <string name="profile">Profile</string>
+    <string name="directions">Direct</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+
+    <string name="title_map">Map</string>
+    <string name="act_comparing_title">Comparison</string>
+    <string name="search">Search</string>
+    <string name="comments_header">Comments</string>
+
+
+    <!--Comparison-->
+    <string name="attr_rating">RATING</string>
+    <string name="attr_price">PRICE</string>
+    <string name="attr_distance">DISTANCE</string>
+    <string name="attr_time">TIME OPERATION</string>
+    <string name="attr_parking">FREE PARKING</string>
+    <string name="attr_air">AIR CONDITIONER</string>
+    <string name="attr_wifi">WIFI</string>
+    <string name="attr_celebration">CELEBRATION</string>
+    <string name="attr_manyFloor">MANY FLOOR</string>
+    <string name="attr_takeWay">TAKE WAY</string>
+    <string name="attr_delivery">DELIVERY</string>
+    <string name="attr_outdoor_seat">OUTDOOR SEAT</string>
+    <string name="attr_smoking_zone">SMOKING ZONE</string>
+
+    <string name="choose_other_amenities">Choose other</string>
+    <string name="relates_list">Others recommend</string>
+    <string name="amenities">Amenities</string>
+    <string name="wifi">Wifi</string>
+    <string name="free_bike_parking">Free parking</string>
+    <string name="out_door_seat">Outdoor seat</string>
+    <string name="air_conditioner">Air conditioner</string>
+    <string name="smoking_zone">Smoking zone</string>
+    <string name="many_floor">Many floor</string>
+    <string name="delivery_service">Delivery service</string>
+    <string name="birthday_celebrate">Birthday celebrate</string>
+    <string name="take_way">Take away</string>
+    
+    <string name="family_friends">Family &amp; Friends</string>
+    <string name="coffee">Coffee &amp; Milk tea</string>
+    <string name="bakery">Bakery</string>
+    <string name="fast_food">Fast food</string>
+    <string name="snacks">Snacks</string>
+    <string name="lunch">Lunch</string>
+
+    <string name="facebook_app_id">1221845811227734</string>
+    <string name="fb_login_protocol_scheme">1221845811227734</string>
+
+    <!--label-->
+    <string name="see_all">More</string>
+    <string name="login_label">Login</string>
+    <string name="logout_label">Log Out</string>
+    <string name="logout_des">Log out or switch account</string>
+    <string name="email_label">Email</string>
+
+    <string name="critique_price_up">Higher</string>
+    <string name="critique_price_down">Lower</string>
+    <string name="location_critique_up">Further</string>
+    <string name="location_critique_down">Shorter</string>
+    <string name="open_util">Open util</string>
+
+    <string name="price_range">Price range</string>
+    <string name="min_rating">Min rating</string>
+    <string name="max_distance">Max distance</string>
+
+    <!--message-->
+    <string name="login_err_msg">Login error, please try again!</string>
+    <string name="empty_user_data_msg">Sorry! we can not get your profile</string>
+    <string name="load_data_failed_msg">Sorry! we can not get data</string>
+    <string name="no_dish_saved">No dish saved!</string>
+    <string name="search_not_found">Search not found!</string>
+    <string name="search_item_error">An error occurred during the search.</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--<string name="transition_session_background" translatable="false">transition_session_background</string>-->
+    <!--<string name="transition_session_image" translatable="false">transition_session_image</string>-->
+
+    <string name="search_hint">Search food or restaurant</string>
+    <string name="hint_comment">Write your comment</string>
+</resources>

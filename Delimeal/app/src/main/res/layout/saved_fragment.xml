@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment showing a list of cards of videos -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hieuapp.lunch.ui.widget.CollectionView
+        android:id="@+id/dish_saved_collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/spacing_normal"
+        android:paddingTop="@dimen/spacing_normal"
+        android:clipToPadding="false"
+        android:clipChildren="false" />
+
+    <!-- Empty Collection view -->
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="?actionBarSize"
+        android:text="@string/no_dish_saved"
+        android:textColor="@color/body_text_2"
+        android:textSize="@dimen/text_size_medium"
+        android:visibility="gone" />
+
+</FrameLayout>

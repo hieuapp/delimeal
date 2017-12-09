@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container_map"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/marker_detail_list"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

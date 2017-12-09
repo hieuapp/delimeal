@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hieuapp.lunch.ui.widget.ForegroundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground">
+
+    <com.hieuapp.lunch.ui.widget.AspectRatioView
+        android:layout_width="@dimen/image_thumbnail_width"
+        android:layout_height="0dp"
+        app:aspectRatio="@dimen/aspect_16_9">
+
+        <!-- Video thumbnail/preview -->
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/grey_300"/>
+    </com.hieuapp.lunch.ui.widget.AspectRatioView>
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_normal"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/PrimaryTitle"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/SecondaryText"
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</com.hieuapp.lunch.ui.widget.ForegroundLinearLayout>

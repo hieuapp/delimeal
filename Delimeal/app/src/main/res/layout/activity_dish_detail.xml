@@ -1,0 +1,253 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/background"
+    android:transitionName="transition_session_background">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fitsSystemWindows="false">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll"
+            android:minHeight="1px"
+            android:fitsSystemWindows="false"
+            android:background="@null"
+            app:titleEnabled="false">
+            <!-- minHeight determines the point to fade in the status bar scrim. Ideally it would
+                 fade in when the image has completely collapsed but it needs to be > 0. -->
+
+            <com.hieuapp.lunch.ui.widget.AspectRatioView
+                android:id="@+id/session_photo_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:aspectRatio="@dimen/aspect_16_9"
+                app:layout_collapseMode="parallax"
+                android:fitsSystemWindows="false">
+
+                <ImageView
+                    android:id="@+id/session_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:transitionName="transition_session_image" />
+
+            </com.hieuapp.lunch.ui.widget.AspectRatioView>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <LinearLayout
+            android:id="@+id/header_session"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/collapsingToolbar"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_normal">
+
+            <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize" />
+
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/padding_normal"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:textAlignment="viewStart"
+                style="@style/SessionDetailsTitle" />
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/padding_normal"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="viewStart"
+                style="@style/SessionDetailsSubtitle" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/detail_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/details_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/critique_rating_layout"/>
+
+                <include layout="@layout/actions_base_layout"/>
+                <include layout="@layout/map_location_preview"/>
+
+                <include layout="@layout/critique_price_layout"/>
+                <include layout="@layout/critique_distance_layout"/>
+
+                <include layout="@layout/address_label_layout"/>
+                <include layout="@layout/time_label_layout"/>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:background="@color/grey_300"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <include layout="@layout/amenities_atributes_layout"/>
+
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:text="@string/choose_other_amenities"
+                    android:textAppearance="@style/TextAppearance.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <HorizontalScrollView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/tags_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:requiresFadingEdge="horizontal"
+                    android:fadingEdgeLength="@dimen/padding_normal">
+
+                    <LinearLayout
+                        android:id="@+id/amenities_tags"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp" />
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relates_container"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/relates_header"
+                    android:text="@string/relates_list"
+                    android:textAppearance="@style/HeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.github.rahatarmanahmed.cpv.CircularProgressView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/wait_load_relates"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:cpv_animAutostart="true"
+                    app:cpv_indeterminate="true" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/relates_header"
+                    android:id="@+id/list_dish_relates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarStyle="insideOverlay"
+                    android:orientation="horizontal"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/grey_300"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/comments_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/comments_block_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/comments_header"
+                    android:textAppearance="@style/TextAppearance.Subhead" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/input_comment"
+                    android:lines="1"
+                    android:hint="@string/hint_comment"
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:clickable="true"
+                    android:background="?selectableItemBackground"
+                    android:id="@+id/btn_comment"
+                    android:src="@drawable/btn_send"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

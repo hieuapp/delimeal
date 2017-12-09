@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Delimeal</string>
+    <string name="explore">Khám phá</string>
+    <string name="saved">Đã lưu</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="directions">Chỉ đường</string>
+    <string name="share">Chia sẻ</string>
+    <string name="save">Lưu</string>
+
+    <string name="title_map">Bản đồ</string>
+    <string name="act_comparing_title">So sánh</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="comments_header">Bình luận</string>
+
+
+    <!--Comparison-->
+    <string name="attr_rating">XẾP HẠNG</string>
+    <string name="attr_price">GIÁ</string>
+    <string name="attr_distance">KHOẢNG CÁCH</string>
+    <string name="attr_time">THỜI GIAN HOẠT ĐỘNG</string>
+    <string name="attr_parking">BÃI ĐỖ XE</string>
+    <string name="attr_air">ĐIỀU HÒA KHÔNG KHÍ</string>
+    <string name="attr_wifi">WIFI</string>
+    <string name="attr_celebration">TỔ CHỨC SINH NHẬT</string>
+    <string name="attr_manyFloor">NHIỀU TẦNG</string>
+    <string name="attr_takeWay">MUA MANG ĐI</string>
+    <string name="attr_delivery">GIAO HÀNG</string>
+    <string name="attr_outdoor_seat">GHẾ NGOÀI TRỜI</string>
+    <string name="attr_smoking_zone">CHO HÚT THUỐC</string>
+
+    <string name="choose_other_amenities">Chọn quán ăn khác</string>
+    <string name="relates_list">Đề xuất khác</string>
+    <string name="amenities">Tiện nghi</string>
+    <string name="wifi">Wifi</string>
+    <string name="free_bike_parking">Bãi đỗ xe</string>
+    <string name="out_door_seat">Ghế ngoài trời</string>
+    <string name="air_conditioner">Điều hòa không khí</string>
+    <string name="smoking_zone">Cho hút thuốc</string>
+    <string name="many_floor">Nhiều tầng</string>
+    <string name="delivery_service">Dịch vụ giao hàng</string>
+    <string name="birthday_celebrate">Tổ chức sinh nhật</string>
+    <string name="take_way">Mua mang đi</string>
+
+    <string name="family_friends">Bạn b è&amp; Gia đình</string>
+    <string name="coffee">Cà phê &amp; Trà sữa</string>
+    <string name="bakery">Tiệm bánh</string>
+    <string name="fast_food">Thức ăn nhanh</string>
+    <string name="snacks">Đồ ăn vặt</string>
+    <string name="lunch">Ăn trưa</string>
+
+    <string name="facebook_app_id">1221845811227734</string>
+    <string name="fb_login_protocol_scheme">1221845811227734</string>
+
+    <!--label-->
+    <string name="see_all">Thêm</string>
+    <string name="login_label">Đăng nhập</string>
+    <string name="logout_label">Đăng xuất</string>
+    <string name="logout_des">Đăng xuất</string>
+    <string name="email_label">Email</string>
+
+    <string name="critique_price_up">Higher</string>
+    <string name="critique_price_down">Thấp hơn</string>
+    <string name="location_critique_up">Further</string>
+    <string name="location_critique_down">Gần hơn</string>
+    <string name="open_util">Mở cửa tới</string>
+
+    <string name="price_range">Khoảng giá</string>
+    <string name="min_rating">Xếp hạng thấp nhất</string>
+    <string name="max_distance">Khoảng cách xa nhất</string>
+
+    <!--message-->
+    <string name="login_err_msg">Login error, please try again!</string>
+    <string name="empty_user_data_msg">Sorry! we can not get your profile</string>
+    <string name="load_data_failed_msg">Sorry! we can not get data</string>
+    <string name="no_dish_saved">No dish saved!</string>
+    <string name="search_not_found">Không tìm thấy kết quả nào!</string>
+    <string name="search_item_error">Xảy ra lỗi trong quá trình tìm kiếm</string>
+
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+
+    <!--<string name="transition_session_background" translatable="false">transition_session_background</string>-->
+    <!--<string name="transition_session_image" translatable="false">transition_session_image</string>-->
+
+    <string name="search_hint">Tìm kiếm món ăn hoặc nhà hàng</string>
+    <string name="hint_comment">Viết bình luận</string>
+
+</resources>

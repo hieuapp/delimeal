@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="16dp"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:id="@+id/directions"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_directions"/>
+        <TextView
+            android:textAllCaps="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/directions"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_share"/>
+        <TextView
+            android:textAllCaps="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/share"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/save"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ic_saved"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_love_border"/>
+        <TextView
+            android:textAllCaps="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/save"/>
+
+    </LinearLayout>
+
+</LinearLayout>
