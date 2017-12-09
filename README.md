@@ -2,8 +2,7 @@ Delimeal
 =====
 
 
-<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200"/>
-[Delimeal - Free Template for Booking App](https://play.google.com/store/apps/details?id=com.hieuapp.lunch&hl=en "Get it on Google Play")
+<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="200"/> [Delimeal - Free Template for Booking App][1].
 
 Delimeal is a android template app for restaurant or booking app. 
 
@@ -26,3 +25,5 @@ Sceenshot
 <img src="https://github.com/hieuapp/delimeal/blob/master/screenshot/screen4.png" width="250"/> <img src="https://github.com/hieuapp/delimeal/blob/master/screenshot/screen5.png" width="250"/> <img src="https://github.com/hieuapp/delimeal/blob/master/screenshot/screen6.png" width="250"/>
 
 <img src="https://github.com/hieuapp/delimeal/blob/master/screenshot/screen7.png" width="250"/> <img src="https://github.com/hieuapp/delimeal/blob/master/screenshot/screen8.png" width="250"/>
+
+[1]: https://play.google.com/store/apps/details?id=com.hieuapp.lunch&hl=en
